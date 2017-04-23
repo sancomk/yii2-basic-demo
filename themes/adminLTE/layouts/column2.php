@@ -42,6 +42,7 @@ use app\themes\adminLTE\components\ThemeNav;
                   'items' => [
                       ['label'=>Yii::t('app','MAIN NAVIGITION'), 'options'=>['class'=>'header']],
                       ['label' => ThemeNav::link('Dashboard', 'fa fa-dashboard'), 'url' => ['site/index'], 'visible'=>!Yii::$app->user->isGuest],
+                      ['label' => 'CRUD', 'url' => 'customer/index']
                   ],
                 ]);
             ?>
